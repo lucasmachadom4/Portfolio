@@ -1,0 +1,22 @@
+/*Global CSS*/
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+}

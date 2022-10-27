@@ -1,0 +1,256 @@
+main {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  background: #ec39ec;
+  background: -webkit-linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  background: -moz-linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  background: linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.banner div {
+  margin-top: 20vh;
+  margin-left: 4vw;
+}
+
+.banner div h1 {
+  font-size: 2.3em;
+  letter-spacing: 3px;
+
+  background: #ec39ec;
+  background: -webkit-linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  background: -moz-linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  background: linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.banner div p {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  
+}
+/* Tirar ou sei la */
+.art {
+  visibility: collapse;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about div img {
+  margin-top: 1vh;
+  border-radius: 15px;
+  width: 80vw;
+  max-width: 300px;
+}
+
+.about div p {
+  margin-top: 0.7em;
+  text-align: justify;
+  font-size: 1.2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+/*     */
+#skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-skill {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-skill div {
+  padding: 0.7em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-skill div img {
+  max-width: 128px;
+  max-height: 128px;
+  border-radius: 10px;
+}
+
+/* Projetos */
+.container-project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#project div div {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 20px;
+  background: #1f1f1f3a;
+  max-width: 300px;
+}
+
+#project a {
+  color: #fff;
+  padding: 1px;
+}
+
+#project a:hover {
+  color: rgb(173, 167, 167);
+}
+
+#project div img {
+  width: 80%;
+  max-width: 350px;
+}
+
+#project div div:hover {
+  filter: contrast(1.1) hue-rotate(-15deg) saturate(0.75);
+}
+
+/*Contato */
+#contact div {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5px;
+}
+#contact div form label {
+  font-size: 1.3em;
+  padding-bottom: 5px;
+}
+
+#contact input,
+textarea {
+  max-width: 90vw;
+  font-size: 1.2em;
+}
+
+#contact textarea {
+  height: 42vh;
+}
+
+.submitarea {
+  justify-content: center;
+}
+
+.submitbtn {
+  margin-top: 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: #ad24ec;
+  color: #000000;
+  height: 35px;
+  font-size: 1.2em;
+  min-width: 250px;
+}
+
+.submitbtn:hover {
+  background: #c372e9;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;  
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+.footer a {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+  justify-content: space-around;
+  padding: 0 10px 0 10px;
+}
+
+.footer a:hover {
+  background: #ec39ec;
+  background: -webkit-linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  background: -moz-linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  background: linear-gradient(to right, #ec39ec 17%, #ad24ec 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer a img {
+  max-width: 32px;
+  padding: 5px;
+}
+
+@media screen and (min-width: 950px) {
+  .banner div h1 {
+    font-size: 2em;
+  }
+
+  .banner div p {
+    font-size: 1em;
+  }
+  .art {
+    visibility: visible;
+  }
+}
+
+/*Tablete*/
+@media screen and (min-width: 481px) {
+  .container-skill div {
+    font-size: 1.1em;
+  }
+
+  #contact form {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact input,
+  textarea {
+    max-width: 430px;
+    width: 430px;
+  }
+
+  .submitbtn {
+    max-width: 350px;
+  }
+}
+
+/*Notebook*/
+@media screen and (min-width: 801px) {
+}
+
+/*PC*/
+@media screen and (min-width: 1200px) {
+}

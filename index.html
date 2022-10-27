@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body onload="navControl()">
+    <header>
+      <nav>
+        <div class="lang-menu">
+          <div class="selected-lang">
+            <img
+              class="current-flag"
+              src="/assets/brasil-flag.png"
+              alt="brasil flag"
+            />
+            <label id="current-language">PT-BR</label>
+
+            <ul id="ul-lang">
+              <li>
+                <p onclick="selectPT()">
+                  <img class="pt-br" src="/assets/brasil-flag.png" alt="" />
+                  <label for="current-language">PT-BR</label>
+                </p>
+              </li>
+              <li>
+                <p onclick="selectUS()">
+                  <img class="us" src="/assets/eua-flag.png" alt="us flag" />
+                  <label for="current-language">US</label>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-menu" onclick="handleClick()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#project">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div>
+          <p>Ola sou</p>
+          <h1>Lucas Machado</h1>
+          <p>Programador FullStack &#9889;</p>
+        </div>
+        <div class="art">
+          <img src="assets/arrow-down.png" alt="" />
+        </div>
+      </section>
+      <section id="about" class="about">
+        <!-- sobre -->
+        <div>
+          <img src="assets/profile-pic.jpg" alt="" />
+        </div>
+        <div>
+          <h2>Sobre mim</h2>
+          <p>
+            Oi eu sou o Lucas comecei a trabalhar na área de TI bem jovem com
+            manutenção de computadores e por bastante tempo sou analista de
+            suporte.
+          </p>
+          <p>
+            Hoje sou formado em Analise e desenvolvimento de sistemas e tenho
+            interesse tanto em <i>Front-ent</i> quanto <i>Back-end</i>, no
+            momento meu foco é em <i>HTML, CSS, JavaScript </i>e<i> Angular</i>.
+          </p>
+          <p>
+            Quando não estou trabalhando gosto de passar meu tempo com amigos,
+            assistindo um bom seriado ou alguma atividade ao ar livre. &#9996;
+          </p>
+        </div>
+      </section>
+      <section id="skills">
+        <!-- Habilidades -->
+        <div>
+          <h2>Habilidades</h2>
+        </div>
+        <div class="container-skill">
+          <div>
+            <img src="assets/icons/icon-html.png" alt="icon HTML" />
+            <p>HTML</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-css.png" alt="icon CSS" />
+            <p>CSS</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-js.png" alt="icon JavaScript" />
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-ts.png" alt="icon TypeScript" />
+            <p>TypeScript</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-angular.png" alt="icon Angular" />
+            <p>Angular 12</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-git.png" alt="icon git" />
+            <p>Git | GitHub</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-uml.png" alt="icon uml" />
+            <p>UML</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-c-sharp.png" alt="icon c sharp" />
+            <p>C Sharp</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-netcore.png" alt="icon net core" />
+            <p>.Net</p>
+          </div>
+          <div>
+            <img src="assets/icons/icon-mysql.png" alt="icon sql" />
+            <p>SQL</p>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <!-- Projetos -->
+        <div>
+          <h2>Projetos</h2>
+        </div>
+        <div class="container-project">
+          <div>
+            <a href="https://github.com/lucasmachadom4/calculadora-c-sharp">
+              Calculadora C# WindowsForms
+            </a>
+            <img
+              src="https://raw.githubusercontent.com/lucasmachadom4/calculadora-c-sharp/development/screen_calc.png"
+              alt="calculadora em c sharp"
+            />
+          </div>
+          <div>
+            <a href="https://github.com/lucasmachadom4/calculadora-c-sharp">
+              <span>Calculadora C# WindowsForms </span>
+            </a>
+            <img
+              src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+              alt="calculadora em c sharp"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <!-- Contato -->
+
+        <div>
+          <h2>Contato</h2>
+          <form action="">
+            <div>
+              <label for="name">Nome:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nome Sobrenome"
+              />
+            </div>
+            <div>
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                name="_email"
+                id="email"
+                placeholder="exemplo@mail.com"
+              />
+            </div>
+            <div>
+              <label for="message">Mensagem:</label>
+              <textarea
+                name="description"
+                id=""
+                cols="30"
+                rows="10"
+                id="message"
+                placeholder="Como posso te ajudar?"
+              ></textarea>
+            </div>
+            <div class="submitarea">
+              <button class="submitbtn">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <footer class="footer">
+          <a href="https://www.linkedin.com/in/lucas-machado-marques/">
+            <img src="assets/icons/icon-linkedin.png" alt="icone linkedin" />
+            <p>Linkedin</p>
+          </a>
+
+          <a href="https://github.com/lucasmachadom4">
+            <img src="assets/icons/icon-github.png" alt="icone github" />
+            <p>GitHub</p>
+          </a>
+        </footer>
+      </section>
+    </main>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
