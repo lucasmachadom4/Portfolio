@@ -23,6 +23,7 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
+  z-index: 1;
 }
 
 .nav-list li {
@@ -32,6 +33,7 @@ nav {
 
 .nav-list.active {
   transform: translateX(0);
+
 }
 
 .mobile-menu {
