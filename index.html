@@ -21,6 +21,10 @@
     <header>
       <nav id="nav">
         <div class="lang-menu">
+          <button type="button" onclick="setLanguegeUS()">Idioma US</button>
+          <button type="button" onclick="setLanguegePTBR()">
+            Idioma PT-BR
+          </button>
           <div class="selected-lang">
             <img
               class="current-flag"
@@ -53,10 +57,10 @@
         </div>
 
         <ul class="nav-list">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#project">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a href="#about" id="aboutLiText">Sobre</a></li>
+          <li><a href="#skills" id="skillsLiText">Habilidades</a></li>
+          <li><a href="#project" id="projectLiText">Projetos</a></li>
+          <li><a href="#contact" id="contactLiText">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -64,40 +68,55 @@
     <main>
       <section class="banner hidden">
         <div>
-          <p>Ola sou</p>
+          <p id="bannerP1Text">Ola sou</p>
           <h1>Lucas Machado</h1>
-          <p>Programador FullStack &#9889;</p>
-        </div>        
+          <p>
+            <span id="bannerP2Text">Programador FullStack</span>
+            <span> &#9889;</span>
+          </p>
+        </div>
       </section>
       <section id="about" class="about hidden">
         <!-- sobre -->
         <div>
-          <img src="assets/profile-pic.jpg" alt="" />
+          <img src="assets/profile-pic.jpg" alt="picture" />
         </div>
         <div>
-          <h2>Sobre mim</h2>
-          <p>
+          <h2 id="aboutH2Text">Sobre mim</h2>
+          <p id="aboutP1Text">
             Oi eu sou o Lucas comecei a trabalhar na área de TI bem jovem com
             manutenção de computadores e por bastante tempo sou analista de
             suporte.
           </p>
           <p>
-            Hoje sou formado em Analise e desenvolvimento de sistemas e tenho
-            interesse tanto em <i>Front-end</i> quanto <i>Back-end</i>, no
-            momento meu foco é em <i>HTML, CSS, JavaScript </i>e<i> Angular</i>.
+            <span id="aboutP2Span1Text"
+              >Hoje sou formado em Analise e desenvolvimento de sistemas e tenho
+              interesse tanto em
+            </span>
+            <i>Front-end </i>
+            <span id="aboutP2Span2Text">quanto </span>
+            <i>Back-end</i>,
+            <span id="aboutP2Span3Text">no momento meu foco é em </span>
+            <i>HTML, CSS, JavaScript </i>
+            <span id="aboutP2Span4Text">e </span>
+            <i>Angular</i>.
           </p>
           <p>
-            Quando não estou trabalhando gosto de passar meu tempo com amigos,
-            assistindo um bom seriado ou alguma atividade ao ar livre. &#9996;
+            <span id="aboutP3Text"
+              >Quando não estou trabalhando gosto de passar meu tempo com
+              amigos, assistindo um bom seriado ou alguma atividade ao ar
+              livre.</span
+            >
+            &#9996;
           </p>
         </div>
       </section>
       <section id="skills" class="hidden">
         <!-- Habilidades -->
         <div>
-          <h2>Habilidades</h2>
+          <h2 id="skillsH2">Habilidades</h2>
         </div>
-        <div class="container-skill" >
+        <div class="container-skill">
           <div>
             <img src="assets/icons/icon-html.png" alt="icon HTML" />
             <p>HTML</p>
@@ -143,7 +162,7 @@
       <section id="project" class="hidden">
         <!-- Projetos -->
         <div>
-          <h2>Projetos</h2>
+          <h2 id="projectH2">Projetos</h2>
         </div>
         <div class="container-project">
           <div>
@@ -170,10 +189,10 @@
         <!-- Contato -->
 
         <div>
-          <h2>Contato</h2>
+          <h2 id="contactH2">Contato</h2>
           <form action="">
             <div>
-              <label for="name">Nome:</label>
+              <label for="name" id="contactlabelNameText">Nome:</label>
               <input
                 type="text"
                 name="name"
@@ -191,10 +210,12 @@
               />
             </div>
             <div>
-              <label for="message">Mensagem:</label>
+              <label for="message" id="contactlabelMensagemText"
+                >Mensagem:</label
+              >
               <textarea
                 name="description"
-                id=""
+                id="message"
                 cols="30"
                 rows="10"
                 id="message"
@@ -222,7 +243,9 @@
     <footer class="footer">
       <p>© 2022 Lucas Machado</p>
     </footer>
-    <a href="#nav"><img class="upbtn" src="assets/arrow-down.png" alt="up"></a>
+    <a href="#nav"
+      ><img class="upbtn" src="assets/arrow-down.png" alt="up"
+    /></a>
     <script src="scripts/index.js"></script>
     <script src="scripts/header.js"></script>
     <script src="scripts/main.js"></script>
