@@ -14,17 +14,18 @@ function handleClick() {
 
 //seletor de idioma
 function selectPT() {
-  const urlFlag = document.querySelector(".pt-br")?.getAttribute("src");
-  const currentFlag = document.querySelector(".current-flag");
-  const currentText = document.querySelector("#current-language");
-  currentFlag?.setAttribute("src", urlFlag);
+  const urlFlag = document.querySelector(".pt-br").getAttribute("src");
+  let currentFlag = document.querySelector(".current-flag");
+  let currentText = document.querySelector("#current-language");
+  currentFlag.setAttribute("src", urlFlag);
   currentText.textContent = "PT-BR";
 }
+
 function selectUS() {
-  const urlFlag = document.querySelector(".us")?.getAttribute("src");
-  const currentFlag = document.querySelector(".current-flag");
-  const currentText = document.querySelector("#current-language");
-  currentFlag?.setAttribute("src", urlFlag);
+  const urlFlag = document.querySelector(".us").getAttribute("src");
+  let currentFlag = document.querySelector(".current-flag");
+  let currentText = document.querySelector("#current-language");
+  currentFlag.setAttribute("src", urlFlag);
   currentText.textContent = "US";
 }
 /*
