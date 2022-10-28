@@ -53,11 +53,6 @@ section {
 .banner div p {
   font-size: 1.2em;
   letter-spacing: 2px;
-  
-}
-/* Tirar ou sei la */
-.art {
-  visibility: collapse;
 }
 
 .about {
@@ -79,6 +74,7 @@ section {
   font-size: 1.2em;
   padding-left: 1em;
   padding-right: 1em;
+  max-width: 540px;
 }
 /*     */
 #skills {
@@ -186,7 +182,7 @@ textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;  
+  justify-content: center;
   letter-spacing: 1px;
   margin-top: 50px;
 }
@@ -214,21 +210,30 @@ textarea {
   padding: 5px;
 }
 
-footer p{
+footer p {
   color: rgba(255, 255, 255, 0.8);
   padding-bottom: 15px;
 }
+/* */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
 
-@media screen and (min-width: 950px) {
-  .banner div h1 {
-    font-size: 2em;
-  }
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
-  .banner div p {
-    font-size: 1em;
-  }
-  .art {
-    visibility: visible;
+.upbtn {
+  display: contents;
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }
 
@@ -257,28 +262,30 @@ footer p{
 
 /*Notebook*/
 @media screen and (min-width: 801px) {
+  .upbtn {
+    display: block;
+    width: 30px;
+    transform: rotate(180deg);
+    border-radius: 20% 80% 100% 100%;
+    padding: 2px;
+    background: #ad24ec3a;
+  
+    position: -webkit-sticky;
+    position: fixed;
+    top: 89vh;
+    right: 6vh;
+    z-index: 1;
+  }
 }
 
 /*PC*/
 @media screen and (min-width: 1200px) {
-}
-
-
-.hidden{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);  
-  transition: all 1s;
-}
-
-.show{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-
-@media (prefers-reduced-motion){
-  .hidden{   
-    transition: none;
+  .banner div {
+    margin: auto;
+  } 
+  
+  .container-skill{
+    max-width: 920px;
+    align-self: center;
   }
 }
