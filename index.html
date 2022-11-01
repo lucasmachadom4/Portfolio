@@ -21,12 +21,15 @@
     <header>
       <nav id="nav">
         <div class="lang-menu">
-          <span class="showSpan">&#127760;</span>
-          <select name="selectLanguege" onchange="setLanguege(value)" class="lang">
-            <option value="pt-br" selected="">PT-BR</option>
+          <span>&#127760;</span>
+          <select
+            name="selectLanguege"
+            id="selectLanguege"
+            onchange="setLanguege(value)"
+          >
+            <option value="pt-br" selected="" class="teste">PT-BR</option>
             <option value="us">US</option>
-          </select>
-          <button type="button" onclick="teste()">Teste</button>
+          </select>          
           <!--
           <div class="selected-lang">
             <img

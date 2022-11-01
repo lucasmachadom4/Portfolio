@@ -91,15 +91,33 @@ nav {
     background: red;
   }
 
+ 
+
   
 /* IDIOMA CSS*/
+
+
 .lang-menu {
-    position: relative;
-    color: rgb(231, 101, 214);
+    position: relative;   
+    display: flex;  
+    line-height: 3; 
     left: 5vw;
-    font-weight: bold;
+    width: 100px;
   }
-  
+  select{
+    font-size: 1em;
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100px;
+  }
+
+  option{
+    border: none;
+    font-size: 1em;
+  }
+
+  /*
   .selected-lang {
     cursor: pointer;
     display: flex;
@@ -156,13 +174,34 @@ nav {
     border-radius: 5px;
   }
 
+  
+
+/*
+  
+
   .lang{
-    color: aliceblue;
-    background: none;
-    border-radius: 0;
-    border-color: black;
+    background-color: transparent;
+    border: none;    
+    color: #fff ;
+    font-size: inherit;
+    font-weight: bold;
   }
 
   .lang option{
     background-color: #000;
+    height: 50px;
   }
+
+  
+
+select {
+    background-color: transparent;
+    border: none;    
+    color: #fff ;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+.lang option{
+  background-color: transparent;
+}

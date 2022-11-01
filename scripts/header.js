@@ -39,11 +39,6 @@ function setLanguege(value){
   }
 }
 
-function teste(){
-  //document.querySelector("#check") = "&#10004";
-  console.log( document.querySelector(".showSpan") );
-}
-
 
 function languegePTBR() {
   document.querySelector("#aboutLiText").textContent = "Sobre";
