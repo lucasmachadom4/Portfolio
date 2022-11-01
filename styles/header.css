@@ -155,4 +155,14 @@ nav {
   #ul-lang li p img {
     border-radius: 5px;
   }
-  
+
+  .lang{
+    color: aliceblue;
+    background: none;
+    border-radius: 0;
+    border-color: black;
+  }
+
+  .lang option{
+    background-color: #000;
+  }

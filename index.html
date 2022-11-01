@@ -21,10 +21,13 @@
     <header>
       <nav id="nav">
         <div class="lang-menu">
-          <button type="button" onclick="setLanguegeUS()">Idioma US</button>
-          <button type="button" onclick="setLanguegePTBR()">
-            Idioma PT-BR
-          </button><!--
+          <span class="showSpan">&#127760;</span>
+          <select name="selectLanguege" onchange="setLanguege(value)" class="lang">
+            <option value="pt-br" selected="">PT-BR</option>
+            <option value="us">US</option>
+          </select>
+          <button type="button" onclick="teste()">Teste</button>
+          <!--
           <div class="selected-lang">
             <img
               class="current-flag"
