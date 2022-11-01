@@ -92,11 +92,8 @@ nav {
   }
 
  
-
   
-/* IDIOMA CSS*/
-
-
+/* IDIOMA */
 .lang-menu {
     position: relative;   
     display: flex;  
@@ -116,92 +113,3 @@ nav {
     border: none;
     font-size: 1em;
   }
-
-  /*
-  .selected-lang {
-    cursor: pointer;
-    display: flex;
-  }
-  
-  .current-flag {
-    content: "";
-    display: block;
-    width: 32px;
-    height: 32px;
-  }
-  
-  #current-language {
-    padding-left: 8px;
-    cursor: pointer;
-    line-height: 2;
-  }
-  
-  .lang-menu ul {
-    border-radius: 5px;
-    display: none;
-    position: absolute;
-    top: 30px;
-    width: 120%;
-  }
-  
-  .lang-menu:hover ul {
-    display: block;
-  }
-  
-  .lang-menu ul li {
-    list-style: none;
-    display: flex;
-  }
-  
-  .lang-menu ul li p {
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 8px;
-  }
-  
-  .lang-menu ul li p label {
-    padding-left: 8px;
-  }
-  
-  .selected-lang ul li p:hover {
-    background-color: rgba(62, 253, 4, 0.1);
-  }
-  
-  #ul-lang li p img {
-    border-radius: 5px;
-  }
-
-  
-
-/*
-  
-
-  .lang{
-    background-color: transparent;
-    border: none;    
-    color: #fff ;
-    font-size: inherit;
-    font-weight: bold;
-  }
-
-  .lang option{
-    background-color: #000;
-    height: 50px;
-  }
-
-  
-
-select {
-    background-color: transparent;
-    border: none;    
-    color: #fff ;
-    font-size: inherit;
-    font-weight: bold;
-}
-
-.lang option{
-  background-color: transparent;
-}
