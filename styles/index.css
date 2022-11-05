@@ -1,5 +1,6 @@
 /*Global CSS*/
 
+
 body {
   font-family: "Inter", sans-serif;
   background: #000;
@@ -18,7 +19,8 @@ a {
 }
 
 @media screen and (max-width: 999px) {
-  body {
+  html, body{
     overflow-x: hidden;
   }
+
 }
