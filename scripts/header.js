@@ -12,6 +12,16 @@ function handleClick() {
   mobileMenu.classList.toggle(activeClass);
 }
 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+
+
 //seletor de idioma
 /*
 function selectPT() {

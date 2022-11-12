@@ -7,11 +7,98 @@ a:hover {
   color: #9621cc;
 }
 
-.welcome {
-  font-size: 2em;
-  text-align: center;
+
+/*  */
+.nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  position: relative;
 }
 
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;  
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;  
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 25px 13px 10px;
+  text-decoration: none;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    padding: 0px 10px 0px 10px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    
+    height: 60px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 3px solid #9621cc;;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.795);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 60px;
+    left: 0px;
+    z-index: 1;
+  }
+  .nav > .nav-links > a {
+    display: block;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overflow-y: auto;
+  }
+}
+
+
+/*
 nav {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -80,7 +167,7 @@ nav {
   }
 }
 
-/* Animação do X*/
+/* Animação do X 
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-14px, -0px);
     background: red;
@@ -92,7 +179,7 @@ nav {
     transform: rotate(45deg) translate(-14px, -0px);
     background: red;
   }
-
+*/
  
   
 /* IDIOMA */
@@ -115,3 +202,5 @@ nav {
     border: none;
     font-size: 1em;
   }
+
+   
