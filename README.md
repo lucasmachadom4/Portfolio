@@ -1,13 +1,16 @@
-# Portfolio
+# Meu site de Portfolio
 
-Meu site de Portfolio
+-⚡[Link](https://lucasmachadom4.github.io/Portfolio/)
 
-https://lucasmachadom4.github.io/Portfolio/
+### Feito com
+![HTML](https://img.shields.io/badge/-HTML-05122A?style=flat&logo=HTML5)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-05122A?style=flat&logo=CSS3&logoColor=1572B6)&nbsp;
+![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)&nbsp;
 
+## Contact
 
-Lista de bugs:
-    1-Tela Mobile: 
-        Menu esta ficando por baixo - Corrigido 
-        Menu esta visivel se correr a tela para a direita 
-
-    3-No firefox mobile link contato vai te na metade
+<p align="left" style="background:yellow">
+  <a href="https://www.linkedin.com/in/lucas-machado-marques/" target="_blank">
+    <img align="center" src="https://img.shields.io/badge/-Lucas Machado-05122A?style=flat&logo=linkedin" alt="linkedin"/>
+  </a>
+</p>
