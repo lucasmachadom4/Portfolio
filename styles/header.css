@@ -1,5 +1,5 @@
 a {
-  color: #ad24ec;
+  color: #cb89ea;
 }
 
 a:hover {
@@ -7,8 +7,6 @@ a:hover {
   color: #9621cc;
 }
 
-
-/*  */
 .nav {
   display: flex;
   align-items: center;
@@ -16,38 +14,38 @@ a:hover {
   position: relative;
 }
 
-.nav > .nav-header {
+.nav>.nav-header {
   display: inline;
 }
 
-.nav > .nav-header > .nav-title {
+.nav>.nav-header>.nav-title {
   display: inline-block;
-  font-size: 22px;  
+  font-size: 22px;
   padding: 10px 10px 10px 10px;
 }
 
-.nav > .nav-btn {
-  display: none;  
+.nav>.nav-btn {
+  display: none;
 }
 
-.nav > .nav-links {
+.nav>.nav-links {
   display: inline;
   float: right;
   font-size: 18px;
 }
 
-.nav > .nav-links > a {
+.nav>.nav-links>a {
   display: inline-block;
   padding: 13px 25px 13px 10px;
   text-decoration: none;
 }
 
-.nav > #nav-check {
+.nav>#nav-check {
   display: none;
 }
 
-@media (max-width:600px) {
-  .nav > .nav-btn {
+@media (max-width:800px) {
+  .nav>.nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
@@ -55,22 +53,23 @@ a:hover {
     cursor: pointer;
     padding: 0px 10px 0px 10px;
   }
-  .nav > .nav-btn > label {
+
+  .nav>.nav-btn>label {
     display: inline-block;
-    
+
     height: 60px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
+
+  .nav>.nav-btn>label>span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 3px solid #9621cc;;
+    border-top: 3px solid #9621cc;
+    ;
   }
-  .nav > .nav-links {
+
+  .nav>.nav-links {
     position: absolute;
     display: block;
     background-color: rgba(0, 0, 0, 0.795);
@@ -81,13 +80,17 @@ a:hover {
     left: 0px;
     z-index: 1;
   }
-  .nav > .nav-links > a {
+
+  .nav>.nav-links>a {
     display: block;
+    font-size: 1.2em;
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+
+  .nav>#nav-check:not(:checked)~.nav-links {
     height: 0px;
   }
-  .nav > #nav-check:checked ~ .nav-links {
+
+  .nav>#nav-check:checked~.nav-links {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -97,110 +100,37 @@ a:hover {
   }
 }
 
-
-/*
-nav {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-content: space-around;
-  align-items: center;
-  height: 60px;
-  overflow-x: hidden;
-}
-
-.nav-list {
-  list-style: none;
-  display: flex;
-  z-index: 1;
-}
-
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
-}
-
-.nav-list.active {
-  transform: translateX(0);
-
-}
-
-.mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu div {
-  width: 32px;
-  height: 3px;
-  background: #9621cc;
-  margin: 8px;
-  transition: 0.3s;
-}
-
-@media screen and (max-width: 800px) {
-  .nav-list {
-    position: absolute;
-    top: 55px;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #000;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
-    border-radius: 100px 0 0 100px;
-    -webkit-box-shadow: inset 1px 0px 7px 1px rgb(255 255 255 / 16%);
-    box-shadow: inset 1px 0px 7px 1px rgb(255 255 255 / 16%);    
+/*Notebook*/
+@media screen and (min-width: 801px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
-
-  .nav-list li {
-    margin-left: 0;
-  }
-
-  .mobile-menu {
-    display: block;
-    position: absolute;
-    right: 5vw;
+  .nav>.nav-links {
+    display: flex;
+    justify-content: center;
   }
 }
 
-/* Animação do X 
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-14px, -0px);
-    background: red;
-  }
-  .mobile-menu.active .line2 {
-    opacity: 0;
-  }
-  .mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-14px, -0px);
-    background: red;
-  }
-*/
- 
-  
 /* IDIOMA */
 .lang-menu {
-    position: relative;   
-    display: flex;  
-    line-height: 3; 
-    left: 5vw;
-    width: 100px;
-  }
-  select{
-    font-size: 1em;
-    background: #000;
-    color: #fff;
-    border: none;
-    width: 100px;
-  }
+  position: relative;
+  display: flex;
+  line-height: 3;
+  left: 5vw;
+  width: 100px;
+}
 
-  option{
-    border: none;
-    font-size: 1em;
-  }
+select {
+  font-size: 1em;
+  background: #000;
+  color: #fff;
+  border: none;
+  width: 100px;
+}
 
-   
+option {
+  border: none;
+  font-size: 1em;
+}

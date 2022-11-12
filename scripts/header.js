@@ -1,54 +1,11 @@
-const activeClass = "active";
-let navList;
-let mobileMenu;
-
-function navControl() {
-  navList = document.querySelector(".nav-list");
-  mobileMenu = document.querySelector(".mobile-menu");
-}
-
-function handleClick() {
-  navList.classList.toggle(activeClass);
-  mobileMenu.classList.toggle(activeClass);
-}
-
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-} 
-
-
-//seletor de idioma
-/*
-function selectPT() {
-  const urlFlag = document.querySelector(".pt-br").getAttribute("src");
-  let currentFlag = document.querySelector(".current-flag");
-  let currentText = document.querySelector("#current-language");
-  currentFlag.setAttribute("src", urlFlag);
-  currentText.textContent = "PT-BR";
-}
-
-function selectUS() {
-  const urlFlag = document.querySelector(".us").getAttribute("src");
-  let currentFlag = document.querySelector(".current-flag");
-  let currentText = document.querySelector("#current-language");
-  currentFlag.setAttribute("src", urlFlag);
-  currentText.textContent = "US";
-}*/
-
 //change languege
-function setLanguege(value){
-  if(value == "pt-br"){
+function setLanguege(value) {
+  if (value == "pt-br") {
     languegePTBR();
-  }if(value == "us"){
+  } if (value == "us") {
     languegeUS();
   }
 }
-
 
 function languegePTBR() {
   document.querySelector("#aboutLiText").textContent = "Sobre";
