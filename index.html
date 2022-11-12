@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <div class="nav">
       <input type="checkbox" id="nav-check">
       <div class="nav-header">
@@ -165,22 +165,23 @@
 
       <div>
         <h2 id="contactH2">Contato</h2>
-        <form action="">
+        <form method="POST" action="https://formsubmit.co/lucasmachadomdev@gmail.com" enctype="multipart/form-data">
           <div>
             <label for="name" id="contactlabelNameText">Nome:</label>
-            <input type="text" name="name" id="name" placeholder="Nome Sobrenome" />
+            <input type="text" name="name" id="name" placeholder="Nome Sobrenome" required/>
           </div>
           <div>
             <label for="email">E-mail:</label>
-            <input type="email" name="_email" id="email" placeholder="exemplo@mail.com" />
+            <input type="email" name="email" id="email" placeholder="exemplo@mail.com" required/>
           </div>
           <div>
             <label for="message" id="contactlabelMensagemText">Mensagem:</label>
-            <textarea name="description" id="message" cols="30" rows="10" id="message"
+            <textarea name="message" id="message" cols="30" rows="10" id="message"
               placeholder="Como posso te ajudar?"></textarea>
           </div>
           <div class="submitarea">
-            <button class="submitbtn">Enviar</button>
+            <button class="submitbtn" type="submit">Enviar</button>
+            <!-- <input type="hidden" name="_captcha" value="false">  remove captcha-->
           </div>
         </form>
       </div>
@@ -200,7 +201,7 @@
   <footer class="footer">
     <p>© 2022 Lucas Machado</p>
   </footer>
-  <a href="#nav"><img class="upbtn" src="assets/arrow-down.png" alt="up" /></a>
+  <a href="#header"><img class="upbtn" src="assets/arrow-down.png" alt="up" /></a>
   <script src="scripts/index.js"></script>
   <script src="scripts/header.js"></script>
   <script src="scripts/main.js"></script>
